@@ -4,7 +4,7 @@ COPY java /tmp/
 
 RUN yum install -y java-1.11.0-openjdk-devel
 
-WORKDIR /tmp/java
+WORKDIR /tmp
 RUN javac HelloWorld.java
 
 FROM sphinxgaia/training-centos:latest as luncher
